@@ -175,13 +175,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="c5q-br-BAc">
-                                <rect key="frame" x="242" y="408.5" width="117" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="For whom?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RAP-XG-zRX">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$ you can spent?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RAP-XG-zRX">
                                 <rect key="frame" x="16" y="311" width="210" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="210" id="tVF-Pk-HHU"/>
@@ -192,12 +186,6 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type of present?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fa5-mq-agr">
                                 <rect key="frame" x="16" y="362" width="210" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$ you can spent?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fJO-lQ-7Lg">
-                                <rect key="frame" x="16" y="413" width="210" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -233,13 +221,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="c5q-br-BAc" firstAttribute="centerX" secondItem="OCN-Va-51T" secondAttribute="centerX" id="2QP-zP-gL7"/>
-                            <constraint firstItem="fJO-lQ-7Lg" firstAttribute="centerX" secondItem="fa5-mq-agr" secondAttribute="centerX" id="4JR-dq-JdG"/>
                             <constraint firstItem="uEA-Ms-22e" firstAttribute="leading" secondItem="RAP-XG-zRX" secondAttribute="trailing" constant="16" id="5j2-vY-6my"/>
                             <constraint firstItem="OCN-Va-51T" firstAttribute="width" secondItem="uEA-Ms-22e" secondAttribute="width" id="5uo-3b-zwg"/>
-                            <constraint firstItem="c5q-br-BAc" firstAttribute="centerY" secondItem="fJO-lQ-7Lg" secondAttribute="centerY" id="7fl-9e-OSw"/>
                             <constraint firstItem="RAP-XG-zRX" firstAttribute="top" secondItem="N7O-hW-nRJ" secondAttribute="bottom" constant="60" id="9d9-P8-Fwg"/>
-                            <constraint firstItem="c5q-br-BAc" firstAttribute="width" secondItem="OCN-Va-51T" secondAttribute="width" id="AJv-CQ-AOr"/>
                             <constraint firstItem="N7O-hW-nRJ" firstAttribute="width" relation="lessThanOrEqual" secondItem="rmf-4d-Ne1" secondAttribute="width" multiplier="0.8" id="Cp0-ia-l9d"/>
                             <constraint firstItem="Etu-VA-JF4" firstAttribute="trailing" secondItem="uEA-Ms-22e" secondAttribute="trailing" constant="16" id="EMM-H5-I2w"/>
                             <constraint firstItem="fa5-mq-agr" firstAttribute="top" secondItem="RAP-XG-zRX" secondAttribute="bottom" constant="30" id="NRc-et-Lic"/>
@@ -247,24 +231,21 @@
                             <constraint firstItem="N7O-hW-nRJ" firstAttribute="centerX" secondItem="Etu-VA-JF4" secondAttribute="centerX" id="XXq-2L-0sE"/>
                             <constraint firstItem="fa5-mq-agr" firstAttribute="centerX" secondItem="RAP-XG-zRX" secondAttribute="centerX" id="XdC-ti-aqI"/>
                             <constraint firstItem="uEA-Ms-22e" firstAttribute="centerY" secondItem="RAP-XG-zRX" secondAttribute="centerY" id="ZUj-7k-mm2"/>
-                            <constraint firstItem="fJO-lQ-7Lg" firstAttribute="width" secondItem="fa5-mq-agr" secondAttribute="width" id="ZvN-EL-eiM"/>
                             <constraint firstItem="RAP-XG-zRX" firstAttribute="leading" secondItem="Etu-VA-JF4" secondAttribute="leading" constant="16" id="f2P-gR-O62"/>
                             <constraint firstItem="fa5-mq-agr" firstAttribute="width" secondItem="RAP-XG-zRX" secondAttribute="width" id="gL9-dx-146"/>
                             <constraint firstItem="OCN-Va-51T" firstAttribute="centerX" secondItem="uEA-Ms-22e" secondAttribute="centerX" id="hOK-7c-1hf"/>
                             <constraint firstItem="N7O-hW-nRJ" firstAttribute="centerY" secondItem="Etu-VA-JF4" secondAttribute="centerY" multiplier="0.7" id="idW-et-GCk"/>
                             <constraint firstItem="OCN-Va-51T" firstAttribute="centerY" secondItem="fa5-mq-agr" secondAttribute="centerY" id="l0x-q5-u6k"/>
                             <constraint firstItem="Etu-VA-JF4" firstAttribute="bottom" secondItem="eTp-3S-Dc7" secondAttribute="bottom" constant="22" id="pDz-xm-H6C"/>
-                            <constraint firstItem="fJO-lQ-7Lg" firstAttribute="top" secondItem="fa5-mq-agr" secondAttribute="bottom" constant="30" id="pXf-H0-3FQ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Etu-VA-JF4"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Table" image="table" id="q2K-Rp-0uI"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="forWhomTextField" destination="uEA-Ms-22e" id="TYO-hB-z3f"/>
                         <outlet property="predictionLabel" destination="N7O-hW-nRJ" id="Sgn-oa-vGe"/>
-                        <outlet property="priceTextField" destination="OCN-Va-51T" id="Cr5-0v-1bh"/>
-                        <outlet property="typeTextField" destination="c5q-br-BAc" id="1gH-4f-n64"/>
+                        <outlet property="priceTextField" destination="uEA-Ms-22e" id="oPi-YC-hkd"/>
+                        <outlet property="typeTextField" destination="OCN-Va-51T" id="vim-Kd-TzX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aHi-jh-ZtM" userLabel="First Responder" sceneMemberID="firstResponder"/>

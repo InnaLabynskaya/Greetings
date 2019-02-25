@@ -12,14 +12,13 @@ import UIKit
 class DataTableViewController: UIViewController {
     
     @IBOutlet weak var predictionLabel: UILabel!
-    @IBOutlet weak var forWhomTextField: UITextField!
     @IBOutlet weak var typeTextField: UITextField!
     @IBOutlet weak var priceTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        [forWhomTextField, typeTextField, priceTextField].forEach({
+        [typeTextField, priceTextField].forEach({
             $0?.delegate = self
         })
     }
@@ -30,8 +29,7 @@ class DataTableViewController: UIViewController {
     
     private func predictPresent() {
         predictionLabel.textColor = .lightGray
-        guard let name = forWhomTextField.text, !name.isEmpty,
-            let presentType = typeTextField.text, !presentType.isEmpty,
+            guard let presentType = typeTextField.text, !presentType.isEmpty,
             let priceText = priceTextField.text, !priceText.isEmpty else {
                 predictionLabel.text = "Data can not be empty 🤨"
                 return
@@ -42,8 +40,8 @@ class DataTableViewController: UIViewController {
         }
         let model = TableClassifier()
         do {
-            let output = try model.prediction(name: name, price: price)
-            let prediction = output.category
+            let output = try model.prediction(category: presentType, price: price)
+            let prediction = output.name
             predictionLabel.text = prediction
         } catch {
             predictionLabel.text = Prediction.failed(error).description
@@ -53,9 +51,6 @@ class DataTableViewController: UIViewController {
 
 extension DataTableViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        if textField == forWhomTextField {
-            typeTextField.becomeFirstResponder()
-        }
         if textField == typeTextField {
             priceTextField.becomeFirstResponder()
         }
