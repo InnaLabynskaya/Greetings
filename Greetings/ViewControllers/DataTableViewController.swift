@@ -40,15 +40,11 @@ class DataTableViewController: UIViewController {
             predictionLabel.text = "Price should include only numbers 🤨"
             return
         }
-        let model = LunchDataTableClassifier()
+        let model = TableClassifier()
         do {
-            let output = try model.prediction(company: presentType, name: name, price: price)
-            guard let prediction = Prediction(classLabel: output.type) else {
-                predictionLabel.text = Prediction.empty.description
-                return
-            }
-            predictionLabel.text = prediction.description
-            predictionLabel.textColor = prediction.color
+            let output = try model.prediction(name: name, price: price)
+            let prediction = output.category
+            predictionLabel.text = prediction
         } catch {
             predictionLabel.text = Prediction.failed(error).description
         }

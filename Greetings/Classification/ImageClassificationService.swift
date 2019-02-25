@@ -14,11 +14,11 @@ import Vision
 final class ImageClassificationService {
     
     /// Handler for returning classification result.
-    var completionHandler: ((Prediction) -> ())?
+    var completionHandler: ((String) -> ())?
     
     private lazy var classificationRequest: VNCoreMLRequest = {
         do {
-            let model = try VNCoreMLModel(for: LunchImageClassifier().model)
+            let model = try VNCoreMLModel(for: FlowersClassifier().model)
             let request = VNCoreMLRequest(model: model, completionHandler: { [weak self] request, error in
                 self?.handleClassifications(for: request, error: error)
             })
@@ -47,15 +47,14 @@ final class ImageClassificationService {
     
     private func handleClassifications(for request: VNRequest, error: Error?) {
         guard let results = request.results else {
-            completionHandler?(Prediction.failed(error))
+            completionHandler?(error?.localizedDescription ?? "Error occured")
             return
         }
         guard let classifications = results as? [VNClassificationObservation],
-            let bestClassification = classifications.first,
-            let prediction = Prediction(classLabel: bestClassification.identifier) else {
-                completionHandler?(Prediction.empty)
+            let bestClassification = classifications.first else {
                 return
         }
+        let prediction = bestClassification.identifier
         completionHandler?(prediction)
     }
 }

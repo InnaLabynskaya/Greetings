@@ -38,9 +38,8 @@ class ImageViewController: UIViewController {
         present(imagePickerController, animated: true)
     }
     
-    func updatePredictionLabel(with prediction: Prediction) {
-        predictionLabel.text = prediction.description
-        predictionLabel.textColor = prediction.color
+    func updatePredictionLabel(with prediction: String) {
+        predictionLabel.text = prediction
     }
 }
 

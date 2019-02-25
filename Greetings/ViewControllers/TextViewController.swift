@@ -17,7 +17,6 @@ class TextViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         greetingsTextField.delegate = self
     }
     
@@ -32,14 +31,11 @@ class TextViewController: UIViewController {
             return
         }
         do {
-            let model = try NLModel(mlModel: LunchTextClassifier().model)
-            guard let classLabel = model.predictedLabel(for: text),
-                let prediction = Prediction(classLabel: classLabel) else {
-                    predictionLabel.text = Prediction.empty.description
+            let model = try NLModel(mlModel: TextClassifier().model)
+            guard let classLabel = model.predictedLabel(for: text) else {
                     return
             }
-            predictionLabel.text = prediction.description
-            predictionLabel.textColor = prediction.color
+            predictionLabel.text = classLabel
         } catch {
             fatalError("Failed to load Text Classifier ML model: \(error)")
         }

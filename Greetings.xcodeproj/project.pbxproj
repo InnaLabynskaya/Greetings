@@ -12,6 +12,9 @@
 		41D79EB72220343C00B2D100 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41D79EB62220343C00B2D100 /* Assets.xcassets */; };
 		41D79EBA2220343C00B2D100 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41D79EB82220343C00B2D100 /* LaunchScreen.storyboard */; };
 		41D79EC52220343C00B2D100 /* GreetingsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D79EC42220343C00B2D100 /* GreetingsTests.swift */; };
+		41FF469222240E7F00A9F337 /* FlowersClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 41FF469122240E7F00A9F337 /* FlowersClassifier.mlmodel */; };
+		41FF4694222418C500A9F337 /* TextClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 41FF4693222418C500A9F337 /* TextClassifier.mlmodel */; };
+		41FF46962224343400A9F337 /* TableClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 41FF46952224343400A9F337 /* TableClassifier.mlmodel */; };
 		9DD88BE22223057C0065A7B2 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD88BE12223057C0065A7B2 /* ImageViewController.swift */; };
 		9DD88BE42223058C0065A7B2 /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD88BE32223058C0065A7B2 /* TextViewController.swift */; };
 		9DD88BE6222305A30065A7B2 /* DataTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD88BE5222305A30065A7B2 /* DataTableViewController.swift */; };
@@ -40,6 +43,9 @@
 		41D79EC02220343C00B2D100 /* GreetingsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GreetingsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		41D79EC42220343C00B2D100 /* GreetingsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingsTests.swift; sourceTree = "<group>"; };
 		41D79EC62220343C00B2D100 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41FF469122240E7F00A9F337 /* FlowersClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = FlowersClassifier.mlmodel; sourceTree = "<group>"; };
+		41FF4693222418C500A9F337 /* TextClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = TextClassifier.mlmodel; sourceTree = "<group>"; };
+		41FF46952224343400A9F337 /* TableClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = TableClassifier.mlmodel; sourceTree = "<group>"; };
 		9DD88BE12223057C0065A7B2 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		9DD88BE32223058C0065A7B2 /* TextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewController.swift; sourceTree = "<group>"; };
 		9DD88BE5222305A30065A7B2 /* DataTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTableViewController.swift; sourceTree = "<group>"; };
@@ -87,6 +93,7 @@
 		41D79EAE2220343A00B2D100 /* Greetings */ = {
 			isa = PBXGroup;
 			children = (
+				41FF469022240E6100A9F337 /* Resourses */,
 				41D79EAF2220343A00B2D100 /* AppDelegate.swift */,
 				41D79EB32220343A00B2D100 /* Main.storyboard */,
 				9DD88BE0222305600065A7B2 /* ViewControllers */,
@@ -106,6 +113,16 @@
 				41D79EC62220343C00B2D100 /* Info.plist */,
 			);
 			path = GreetingsTests;
+			sourceTree = "<group>";
+		};
+		41FF469022240E6100A9F337 /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				41FF4693222418C500A9F337 /* TextClassifier.mlmodel */,
+				41FF46952224343400A9F337 /* TableClassifier.mlmodel */,
+				41FF469122240E7F00A9F337 /* FlowersClassifier.mlmodel */,
+			);
+			path = Resourses;
 			sourceTree = "<group>";
 		};
 		9DD88BE0222305600065A7B2 /* ViewControllers */ = {
@@ -236,6 +253,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41FF469222240E7F00A9F337 /* FlowersClassifier.mlmodel in Sources */,
+				41FF4694222418C500A9F337 /* TextClassifier.mlmodel in Sources */,
+				41FF46962224343400A9F337 /* TableClassifier.mlmodel in Sources */,
 				9DD88BEB222306250065A7B2 /* ImageClassificationService.swift in Sources */,
 				9DD88BE6222305A30065A7B2 /* DataTableViewController.swift in Sources */,
 				9DD88BE9222306140065A7B2 /* Prediction.swift in Sources */,
