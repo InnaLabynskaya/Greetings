@@ -18,7 +18,6 @@
 		9DD88BE22223057C0065A7B2 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD88BE12223057C0065A7B2 /* ImageViewController.swift */; };
 		9DD88BE42223058C0065A7B2 /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD88BE32223058C0065A7B2 /* TextViewController.swift */; };
 		9DD88BE6222305A30065A7B2 /* DataTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD88BE5222305A30065A7B2 /* DataTableViewController.swift */; };
-		9DD88BE9222306140065A7B2 /* Prediction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD88BE8222306140065A7B2 /* Prediction.swift */; };
 		9DD88BEB222306250065A7B2 /* ImageClassificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD88BEA222306250065A7B2 /* ImageClassificationService.swift */; };
 		9DD88BEE222306A50065A7B2 /* CGImagePropertyOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD88BED222306A50065A7B2 /* CGImagePropertyOrientation.swift */; };
 /* End PBXBuildFile section */
@@ -46,10 +45,11 @@
 		41FF469122240E7F00A9F337 /* FlowersClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = FlowersClassifier.mlmodel; sourceTree = "<group>"; };
 		41FF4693222418C500A9F337 /* TextClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = TextClassifier.mlmodel; sourceTree = "<group>"; };
 		41FF469722243FB700A9F337 /* TableClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = TableClassifier.mlmodel; sourceTree = "<group>"; };
+		41FF469A222537EE00A9F337 /* CreateMLPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = CreateMLPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		41FF469B222537EF00A9F337 /* CreateMLTable.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = CreateMLTable.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		9DD88BE12223057C0065A7B2 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		9DD88BE32223058C0065A7B2 /* TextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewController.swift; sourceTree = "<group>"; };
 		9DD88BE5222305A30065A7B2 /* DataTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTableViewController.swift; sourceTree = "<group>"; };
-		9DD88BE8222306140065A7B2 /* Prediction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prediction.swift; sourceTree = "<group>"; };
 		9DD88BEA222306250065A7B2 /* ImageClassificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageClassificationService.swift; sourceTree = "<group>"; };
 		9DD88BED222306A50065A7B2 /* CGImagePropertyOrientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGImagePropertyOrientation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -118,11 +118,21 @@
 		41FF469022240E6100A9F337 /* Resourses */ = {
 			isa = PBXGroup;
 			children = (
+				41FF4699222537EE00A9F337 /* CreateML Playgrounds */,
 				41FF4693222418C500A9F337 /* TextClassifier.mlmodel */,
 				41FF469722243FB700A9F337 /* TableClassifier.mlmodel */,
 				41FF469122240E7F00A9F337 /* FlowersClassifier.mlmodel */,
 			);
 			path = Resourses;
+			sourceTree = "<group>";
+		};
+		41FF4699222537EE00A9F337 /* CreateML Playgrounds */ = {
+			isa = PBXGroup;
+			children = (
+				41FF469A222537EE00A9F337 /* CreateMLPlayground.playground */,
+				41FF469B222537EF00A9F337 /* CreateMLTable.playground */,
+			);
+			path = "CreateML Playgrounds";
 			sourceTree = "<group>";
 		};
 		9DD88BE0222305600065A7B2 /* ViewControllers */ = {
@@ -138,7 +148,6 @@
 		9DD88BE7222305F40065A7B2 /* Classification */ = {
 			isa = PBXGroup;
 			children = (
-				9DD88BE8222306140065A7B2 /* Prediction.swift */,
 				9DD88BEA222306250065A7B2 /* ImageClassificationService.swift */,
 			);
 			path = Classification;
@@ -258,7 +267,6 @@
 				41FF469822243FB700A9F337 /* TableClassifier.mlmodel in Sources */,
 				9DD88BEB222306250065A7B2 /* ImageClassificationService.swift in Sources */,
 				9DD88BE6222305A30065A7B2 /* DataTableViewController.swift in Sources */,
-				9DD88BE9222306140065A7B2 /* Prediction.swift in Sources */,
 				9DD88BE22223057C0065A7B2 /* ImageViewController.swift in Sources */,
 				41D79EB02220343A00B2D100 /* AppDelegate.swift in Sources */,
 				9DD88BE42223058C0065A7B2 /* TextViewController.swift in Sources */,

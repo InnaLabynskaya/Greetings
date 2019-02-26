@@ -44,7 +44,7 @@ class DataTableViewController: UIViewController {
             let prediction = output.name
             predictionLabel.text = prediction
         } catch {
-            predictionLabel.text = Prediction.failed(error).description
+            predictionLabel.text = "Unable to classify"
         }
     }
 }
